@@ -3,5 +3,7 @@ services:
   app:
     cpus: 4
     mem_limit: 8g
-    image: .
+    build:
+      context: .
+      dockerfile: Dockerfile
     command: bash -c "while sleep 1000; do :; done"
