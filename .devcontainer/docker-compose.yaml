@@ -3,5 +3,5 @@ services:
   app:
     cpus: 4
     mem_limit: 8g
-    image: datajoint/microns_devcontainer:latest
+    image: .
     command: bash -c "while sleep 1000; do :; done"
